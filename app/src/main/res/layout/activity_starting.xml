@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
+    tools:context="com.development.techiefolks.golgappe.StartingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GOLGAPPE"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:id="@+id/appTitle"
+                android:textColor="#fff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="The ultimate movie review destination"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_below="@id/appTitle"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/userid"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Email"
+            android:ems="15"
+            android:background="@drawable/edittext"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/userpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Password"
+            android:ems="15"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/as_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="You have this error"
+            android:textColor="@color/colorRed"
+            android:textStyle="italic"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/as_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:onClick="signIn"
+            android:text="@string/sign_in"
+            style="@style/Base.Widget.AppCompat.Button.Colored"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:onClick="goTonext"
+            android:text="gogo"
+            style="@style/Base.Widget.AppCompat.Button.Colored"/>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/as_signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="signUp"
+            android:text="New User? Sign up here"
+            android:textColor="#fff"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/as_forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:onClick="forgotPassword"
+            android:text="Forgot Password"
+            android:textColor="#fff"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+</LinearLayout>

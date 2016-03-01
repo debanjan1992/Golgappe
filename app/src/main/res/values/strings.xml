@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Golgappe</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="title_activity_movie">MovieActivity</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="items">
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+        <item>Name1</item>
+    </string-array>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

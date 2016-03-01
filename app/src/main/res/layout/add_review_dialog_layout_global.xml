@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ardlg_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="invisible" />
+
+        <AutoCompleteTextView
+            android:id="@+id/actv_movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:hint="Select your movie"
+            android:padding="10dp" />
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@id/actv_movie_name"
+            android:layout_centerHorizontal="true"
+            android:text="Next"
+            android:textSize="20sp"
+            android:id="@+id/nextDialog"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ardlg_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/review_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Write your review here..."
+            android:maxLines="6"
+            android:minLines="6"
+            android:padding="10dp"
+            android:textSize="15sp" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:numStars="5"
+            android:stepSize="1"
+            android:id="@+id/review_rating"
+            android:layout_below="@id/review_text"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="All Done"
+            android:textSize="20sp"
+            android:id="@+id/saveReview"
+            android:layout_below="@id/review_rating"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ardlg_3"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your review has been saved succesfully!"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:id="@+id/txt"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHARE YOUR REVIEW"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_below="@id/txt"
+            android:layout_marginTop="30dp"
+            android:id="@+id/share_review"
+            />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#fff"
+    android:elevation="5dp">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/review_short"
+        android:text="HELLO GUYS THKSKASKHDNJDJKBD\nsadsa\n1\n1\n1\n2\nfsd"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/rating_image"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="10dp"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewer"
+        android:text="Ankit Rai"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:layout_below="@id/review_short"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/reviewer_dp"
+        android:src="@drawable/user"
+        android:layout_below="@+id/review_short"
+        android:layout_toLeftOf="@+id/reviewer"
+        android:layout_toStartOf="@+id/reviewer"
+        android:scaleType="fitXY"
+        android:layout_marginRight="5dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/rating_image"
+        android:src="@drawable/user"/>
+</RelativeLayout>
+</RelativeLayout>
